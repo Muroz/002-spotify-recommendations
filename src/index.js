@@ -11,7 +11,6 @@ ReactDOM.render(<App />, document.getElementById('root'));
 // Learn more about service workers: https://bit.ly/CRA-PWA
 serviceWorker.unregister();
 
-// TODO ADD VISUALIZER FOR RECOMMENDATIONS
 // TODO ADD ADD THE CREATE/EDIT PLAYLISTS
 // TODO ADD THE PLAY ON BROWSER
 // TODO ADD VISUAL BARS

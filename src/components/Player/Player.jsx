@@ -50,6 +50,7 @@ const ProgressBar = styled.div`
     width: ${props => props.width};
 `
 // TODO SET DEFAULT PROPS
+// TODO PULL THE PROGRESS BAR TO ITS OWN COMPONENT TO AVOID RE-RENDERING THE OTHER COMPONENTS
 const Player = ({ currentSong }) => {
     console.log(currentSong);
     const { item, is_playing, progress_ms } = currentSong

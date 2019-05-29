@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { memo } from 'react'
 import styled from 'styled-components';
 import RecommendedCard from '../RecommendedCard/RecommendedCard';
 
@@ -9,9 +9,8 @@ const Container = styled.div`
     align-items: center;
     justify-content: center;
 `;
-// TODO USE MEMOIZATION OR PURE COMPONENT TO AVOID MULTIPLE RE-RENDERS
-const RecommendedDisplay = ({recommended}) => {
-    console.log('re-rendering')
+
+const RecommendedDisplay = memo(({recommended}) => {
     return (
         <Container>
             {recommended.map(recommendedSong => {
@@ -23,6 +22,6 @@ const RecommendedDisplay = ({recommended}) => {
             })}
         </Container>
     )
-}
+});
 
 export default RecommendedDisplay

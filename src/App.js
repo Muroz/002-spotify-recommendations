@@ -3,10 +3,10 @@ import './App.css'
 import Login from './components/Login/Login'
 import MusicDisplay from './components/MusicDisplay/MusicDisplay'
 export const authEndpoint = 'https://accounts.spotify.com/authorize'
-
-// TODO MOVE TO .ENV
-const clientId = '5bcc27b739f94a48981b8a71c4789105'
-const redirectUri = 'http://localhost:3000'
+// TODO CREATE ENDPOINT LIST
+// PULL LOGIC OUT FOR FETCHES
+const clientId = process.env.REACT_APP_SPOTIFY_CLIENT_ID;
+const redirectUri = process.env.REACT_APP_REDIRECT_URI;
 const scopes = ['user-read-currently-playing', 'user-read-playback-state', 'user-modify-playback-state']
 
 const hash = window.location.hash
